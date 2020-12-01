@@ -6,17 +6,24 @@ namespace dotnet
     {
         static void Main(string[] args)
         {   
-           double num01;
-           double num02;
+           // avrage = x + z  + d 
 
-           Console.Write("Input a number: ");
-           num01 = Convert.ToDouble(Console.ReadLine() );
+           int num01;
+           int num02;
+           int num03;
 
-           Console.Write("Input a second number: ");
-           num02 = Convert.ToDouble(Console.ReadLine() );
+           Console.Write("add first number: ");
+            num01 = Convert.ToInt32(Console.ReadLine());
 
-            double result = num01 * num02;
-            Console.WriteLine("The result is " + result);
+           Console.Write("add second number: ");
+           num02 = Convert.ToInt32(Console.ReadLine());
+
+           Console.Write("add third number: ");
+           num03 = Convert.ToInt32(Console.ReadLine());
+
+           int result = num01 + num02 + num03;
+
+           Console.WriteLine("This is result: " + result);
 
             // wait before closing
             Console.ReadKey();
