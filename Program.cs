@@ -5,18 +5,20 @@ namespace dotnet
     class Program
     {
         static void Main(string[] args)
-        {   Console.Title = "DevThoughts"; 
-            Console.ForegroundColor = ConsoleColor.Green;
+        {   
+           double num01;
+           double num02;
 
-            Console.WriteLine("Hello My name is Tom 😀");
-            Console.ReadLine();
+           Console.Write("Input a number: ");
+           num01 = Convert.ToDouble(Console.ReadLine() );
 
-            Console.WriteLine("Tom! Bobby's old fried from Stavanger 😎");
-            Console.ReadLine();
+           Console.Write("Input a second number: ");
+           num02 = Convert.ToDouble(Console.ReadLine() );
 
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            double result = num01 * num02;
+            Console.WriteLine("The result is " + result);
 
-            Console.WriteLine("No actully I am a dragen!!! 🐲");
+            // wait before closing
             Console.ReadKey();
         }
     }
