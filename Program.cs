@@ -6,19 +6,22 @@ namespace dotnet
     {
         static void Main(string[] args)
         {   
-           double num01;
-           double num02;
+            int age; 
+            int height; 
 
-           Console.Write("Input a number: ");
-           num01 = Convert.ToDouble(Console.ReadLine() );
+            Console.Write("Please input your age: ");
+            age = Convert.ToInt32(Console.ReadLine());
 
-           Console.Write("Input a second number: ");
-           num02 = Convert.ToDouble(Console.ReadLine() );
+            Console.Write("Please input height (cm): ");
+            height = Convert.ToInt32(Console.ReadLine());
 
-            double result = num01 * num02;
-            Console.WriteLine("The result is " + result);
+            if (age >= 18 && height >= 160) {
+                Console.WriteLine("You can enter!");
+            } else {
+                Console.WriteLine("You don't meet the requirements.");
+            }
 
-            // wait before closing
+           // wait before closing
             Console.ReadKey();
         }
     }
